@@ -1,6 +1,6 @@
 {
   "name": "dg-testrelease",
-  "version": "1.0.1",
+  "version": "0.0.0-semantically-released",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -22,7 +22,7 @@
     "semantic-release": "^15.9.15"
   },
   "release": {
-    "branch": "master",
+    "branch": "master-dist",
     "prepare": [
       "@semantic-release/npm",
       {
@@ -30,7 +30,6 @@
         "cmd": "./build/testtest.sh"
       },
       {
-        "branch": "master-dist",
         "path": "@semantic-release/git",
         "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
       }
