@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/dgutride/testrelease#readme",
   "devDependencies": {
+    "@semantic-release/git": "^7.0.4",
     "semantic-release": "^15.9.15"
   },
   "release": {
@@ -30,6 +31,8 @@
         "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
       }
     ],
-    "publish": ["@semantic-release/github"]
+    "publish": [
+      "@semantic-release/github"
+    ]
   }
 }
