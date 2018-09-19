@@ -1,6 +1,6 @@
 {
   "name": "dg-testrelease",
-  "version": "0.0.0-development",
+  "version": "0.0.0-semantically-released",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -19,5 +19,17 @@
   "homepage": "https://github.com/dgutride/testrelease#readme",
   "devDependencies": {
     "semantic-release": "^15.9.15"
+  },
+  "release": {
+    "branch": "master",
+    "prepare": [
+      "@semantic-release/npm",
+      {
+        "branch": "master-dist",
+        "path": "@semantic-release/git",
+        "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
+      }
+    ],
+    "publish": ["@semantic-release/github"]
   }
 }
