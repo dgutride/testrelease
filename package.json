@@ -1,0 +1,23 @@
+{
+  "name": "dg-testrelease",
+  "version": "0.0.0-development",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "semantic-release": "semantic-release"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dgutride/testrelease.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dgutride/testrelease/issues"
+  },
+  "homepage": "https://github.com/dgutride/testrelease#readme",
+  "devDependencies": {
+    "semantic-release": "^15.9.15"
+  }
+}
