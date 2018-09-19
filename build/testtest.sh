@@ -2,7 +2,6 @@
 
 default()
 {
-  TRAVIS_BUILD_DIR=.
   BUILD_DIR=$TRAVIS_BUILD_DIR
   BOWER_JSON=$BUILD_DIR/bower.json
   cd $BUILD_DIR
