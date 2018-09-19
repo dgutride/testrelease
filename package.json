@@ -26,6 +26,10 @@
     "prepare": [
       "@semantic-release/npm",
       {
+        "path": "@semantic-release/exec",
+        "cmd": "./build/testtest.sh"
+      },
+      {
         "branch": "master-dist",
         "path": "@semantic-release/git",
         "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
