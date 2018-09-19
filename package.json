@@ -1,6 +1,6 @@
 {
   "name": "dg-testrelease",
-  "version": "1.0.6",
+  "version": "0.0.0-semantically-released",
   "description": "",
   "main": "",
   "scripts": {
@@ -36,6 +36,6 @@
         "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
       }
     ],
-    "publish": ["@semantic-release/github"]
+    "publish": ["@semantic-release/github", "@semantic-release/npm"]
   }
 }
