@@ -7,11 +7,15 @@ notifications:
 node_js:
   - '8'
 
+before_install:
+  - chmod +x ./build/testtest.sh
+
 script:
   - sh -x ./build/build.sh -p
 
 after_success:
   - npm run semantic-release
+
 branches:
   except:
     - /^v\d+\.\d+\.\d+$/
